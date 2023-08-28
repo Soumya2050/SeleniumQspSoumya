@@ -16,6 +16,7 @@ public class DropDownUsingSelectTagPractice {
 		WebDriver driver =new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.ebay.com/");
+		System.out.println("================");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		WebElement click=driver.findElement(By.id("gh-cat-box"));
 		click.click();
